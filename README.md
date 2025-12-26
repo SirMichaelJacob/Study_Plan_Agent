@@ -178,23 +178,13 @@ API_KEY=lm-studio
 adk web
 ```
 
-Then open:
+Then open the localhost page:
 
 ```
-http://localhost:8000
+http://127.0.0.1:8000/
 ```
 
 Select the app and submit a study request.
-
----
-
-### Programmatic Execution (Optional)
-
-```python
-result = await root_agent.run(
-    "Study HL7 ADT A01, A02, and A03 workflows"
-)
-```
 
 ---
 
@@ -217,23 +207,6 @@ result = await root_agent.run(
 * Parallelize research sub-tasks
 * Introduce caching for repeated study topics
 * Add formal input/output contracts per agent
-
----
-
-## Folder Structure (Suggested)
-
-```text
-.
-├── agents/
-│   ├── planner.py
-│   ├── content.py
-│   ├── quiz.py
-│   └── reviewer.py
-├── app.py
-├── README.md
-├── requirements.txt
-└── .env
-```
 
 ---
 
